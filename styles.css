@@ -1,0 +1,101 @@
+:root {
+  --bg: #f8f7f4;
+  --text: #1c1c1c;
+  --muted: #5c5a55;
+  --rule: #d7d2c8;
+  --link: #1f4f8a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle at 0% 0%, #f1eee8, var(--bg) 35%) fixed;
+  color: var(--text);
+  font-family: Iowan Old Style, Palatino Linotype, Book Antiqua, Palatino, Georgia, serif;
+  line-height: 1.6;
+}
+
+.page {
+  width: min(760px, 92vw);
+  margin: 56px auto 72px;
+}
+
+.top {
+  margin-bottom: 28px;
+}
+
+.nav {
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 18px;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: clamp(2rem, 5vw, 2.65rem);
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+}
+
+section {
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+  margin-top: 22px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li + li {
+  margin-top: 9px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.meta {
+  color: var(--muted);
+  margin-left: 8px;
+}
+
+@media (max-width: 640px) {
+  .page {
+    margin-top: 34px;
+  }
+
+  .meta {
+    display: block;
+    margin-left: 0;
+  }
+}
