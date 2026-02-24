@@ -123,6 +123,21 @@ a:hover {
   margin-left: 8px;
 }
 
+.build-status {
+  margin-left: 8px;
+}
+
+.build-badge {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.build-badge img {
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
 @media (max-width: 640px) {
   .page {
     margin-top: 34px;
@@ -131,6 +146,12 @@ a:hover {
   .meta {
     display: block;
     margin-left: 0;
+  }
+
+  .build-status {
+    display: block;
+    margin-left: 0;
+    margin-top: 3px;
   }
 
   .gh-icon {
