@@ -123,6 +123,11 @@ a:hover {
   margin-left: 8px;
 }
 
+.project-url {
+  margin-left: 8px;
+  font-size: 0.95rem;
+}
+
 .build-status {
   margin-left: 8px;
 }
@@ -149,6 +154,12 @@ a:hover {
   }
 
   .build-status {
+    display: block;
+    margin-left: 0;
+    margin-top: 3px;
+  }
+
+  .project-url {
     display: block;
     margin-left: 0;
     margin-top: 3px;
