@@ -51,12 +51,14 @@ Use one subdomain per project (simplest):
 
 - `zequence.cbrnl.com` -> project repo (`cabernal/zequence`)
 - `tilton.cbrnl.com` -> project repo (`cabernal/tilton`)
+- `tojam2026.cbrnl.com` -> project repo (`cabernal/tojam2026`)
 - `voxel-editor.cbrnl.com` -> project repo (`cabernal/voxel-editor`)
 
 At DNS provider:
 
 - `CNAME` `zequence` -> `cabernal.github.io`
 - `CNAME` `tilton` -> `cabernal.github.io`
+- `CNAME` `tojam2026` -> `cabernal.github.io`
 - `CNAME` `voxel-editor` -> `cabernal.github.io`
 
 Then for each project repo:
@@ -65,6 +67,7 @@ Then for each project repo:
 2. Add `CNAME` file in deployed output with the project domain
    - `zequence.cbrnl.com` (for `zequence`)
    - `tilton.cbrnl.com` (for `tilton`)
+   - `tojam2026.cbrnl.com` (for `tojam2026`)
    - `voxel-editor.cbrnl.com` (for `voxel-editor`)
 3. In each repo `Settings` -> `Pages`, set source to `GitHub Actions`
 
