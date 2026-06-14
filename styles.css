@@ -44,6 +44,32 @@ body {
   margin-bottom: 18px;
 }
 
+.nav-icon {
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.nav-icon-wide {
+  width: 27px;
+}
+
+.nav-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.nav-icon:hover {
+  color: var(--text);
+}
+
 h1 {
   margin: 0 0 6px;
   font-size: clamp(2rem, 5vw, 2.65rem);
